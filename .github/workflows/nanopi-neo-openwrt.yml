@@ -177,6 +177,8 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled() && !failure()
       run: |
+        ls
+        tree
         cd openwrt/bin/targets/*/*
         # cd openwrt/bin/targets/
         rm -rf packages
